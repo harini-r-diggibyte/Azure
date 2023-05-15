@@ -1,0 +1,9 @@
+{
+	"name": "harini",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "29e185a7-68cc-4095-98a9-056c25dc5ffd",
+		"tenantId": "44ab30d8-4950-47de-afb0-0e18d10778dd"
+	}
+}

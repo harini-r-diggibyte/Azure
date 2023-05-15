@@ -1,0 +1,20 @@
+{
+	"name": "InputForCopy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedServiceForCopyAct",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "textFile.txt",
+				"folderPath": "source",
+				"container": "uccontainer"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
