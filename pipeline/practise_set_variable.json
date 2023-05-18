@@ -1,0 +1,32 @@
+{
+	"name": "practise_set_variable",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "CityName",
+					"value": {
+						"value": "@replace(pipeline().parameters.addressLine,'City','CityName')",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"addressLine": {
+				"type": "string",
+				"defaultValue": "Address:408,Unique Pg.City : bangalore. State : Karnataka."
+			}
+		},
+		"variables": {
+			"CityName": {
+				"type": "String"
+			}
+		},
+		"annotations": []
+	}
+}
